@@ -193,13 +193,13 @@
 // const location = {
 //     city: "Toshkent",
 //     coordinates: {
-//       latitude: 41.2995,
-//       longitude: 69.2401
+//         latitude: 41.2995,
+//         longitude: 69.2401 
 //     }
-//   };
-// function func(arg){  // regular
-//     const {coordinates: {latitude: variable_1}} = arg
-//     const { coordinates: {longitude:variable_2}} = arg
+// };
+// function func(arg) {  // regular
+//     const { coordinates: { latitude: variable_1 } } = arg
+//     const { coordinates: { longitude: variable_2 } } = arg
 //     console.log(variable_1);
 //     console.log(variable_2);
 // };
@@ -251,12 +251,12 @@
 
 
 // masala 4
-// const settings = {  
+// const settings = {
 //     theme: "dark",
 //     language: "uz"
 //   };
 // const func = function ( arg ){
-//     const {theme, language = 'red', winter = 'function null'} = arg 
+//     const {theme, language = 'red', winter = 'function null'} = arg
 //     console.log(theme);
 //     console.log(language);
 //     console.log(winter );
@@ -351,7 +351,7 @@
 
 // 2. **Eng Kichik Elementni Topish:**
 //    - **Masala:** Sonlardan iborat massiv berilgan. Shu massivdagi eng kichik elementni topuvchi funksiya yozing.
-let arr = [1,2,3,4,5,6];
+// let arr = [1, 2, 3, 4, 5, 6];
 // const func = function(arg){  //express
 //     if(arg == []){
 //         return []
@@ -402,7 +402,7 @@ let arr = [1,2,3,4,5,6];
 // const func = (arg) =>{  // arrow
 //     if(arg == '' || arg ==[] || arg == {}){
 //         return undefined
-//     } 
+//     }
 //     let num = ''
 //     for (const element of arg) {
 //         if(element >= 0){
@@ -416,7 +416,7 @@ let arr = [1,2,3,4,5,6];
 // const func = function(arg){  // express
 //     if(arg == '' || arg ==[] || arg == {}){
 //         return undefined
-//     } 
+//     }
 //     let num = ''
 //     for (const element of arg) {
 //         if(element >= 0){
@@ -430,7 +430,7 @@ let arr = [1,2,3,4,5,6];
 // function func(arg){  // regular
 //     if(arg == '' || arg ==[] || arg == {}){
 //         return undefined
-//     } 
+//     }
 //     let num = ''
 //     for (const element of arg) {
 //         if(element >= 0){
@@ -509,7 +509,7 @@ let arr = [1,2,3,4,5,6];
 //    - **Masala:** Berilgan matn satridagi faqat harflarni sanaydigan funksiya yozing.
 // let text = `Berilgan matn satridagi faqat harflarni sanaydigan funksiya yozing`;
 // const func = (arg) => {  // arrow
-//     let conutStr = 0; 
+//     let conutStr = 0;
 //     for (const element of arg) {
 //         if(element.charCodeAt(0) >= 65  && element.charCodeAt(0) <= 122){
 //             conutStr++
@@ -520,7 +520,7 @@ let arr = [1,2,3,4,5,6];
 // console.log(func(text));
 
 // const func =function (arg){  // express
-//     let conutStr = 0; 
+//     let conutStr = 0;
 //     for (const element of arg) {
 //         if(element.charCodeAt(0) >= 65  && element.charCodeAt(0) <= 122){
 //             conutStr++
@@ -531,7 +531,7 @@ let arr = [1,2,3,4,5,6];
 // console.log(func(text));
 
 // function func  (arg) {  // regular
-//     let conutStr = 0; 
+//     let conutStr = 0;
 //     for (const element of arg) {
 //         if(element.charCodeAt(0) >= 65  && element.charCodeAt(0) <= 122){
 //             conutStr++
@@ -560,7 +560,7 @@ let arr = [1,2,3,4,5,6];
 // function func2 (arg){  //regular
 //     let res = arg.map(element => element ** 3)
 //     return res;
-// }; 
+// };
 // console.log(func2(num));
 
 
@@ -572,7 +572,7 @@ let arr = [1,2,3,4,5,6];
 //     return [...str].map(c => vowels.includes(c) ? vowelArr.shift() : c).join('');
 // };
 // const text = `Berilgan matn satridagi unli harflarni teskari tartibda chiqaradigan funksiya yozing`;
-// console.log(func(text)); 
+// console.log(func(text));
 
 // const  func = function (str) {  // express
 //     const vowels = 'aeiouAEIOU';
@@ -580,7 +580,7 @@ let arr = [1,2,3,4,5,6];
 //     return [...str].map(c => vowels.includes(c) ? vowelArr.shift() : c).join('');
 // };
 // const text = `Berilgan matn satridagi unli harflarni teskari tartibda chiqaradigan funksiya yozing`;
-// console.log(func(text)); 
+// console.log(func(text));
 
 // function func(str) {  // regular
 //     const vowels = 'aeiouAEIOU';
@@ -588,7 +588,7 @@ let arr = [1,2,3,4,5,6];
 //     return [...str].map(c => vowels.includes(c) ? vowelArr.shift() : c).join('');
 // };
 // const text = `Berilgan matn satridagi unli harflarni teskari tartibda chiqaradigan funksiya yozing`;
-// console.log(func(text)); 
+// console.log(func(text));
 
 
 
@@ -621,7 +621,7 @@ let arr = [1,2,3,4,5,6];
 //     for (const element of arg) {
 //         sum += element;
 //     }
-//     return sum /num
+//     return sum / num
 // }
 // console.log(func(num));
 
@@ -631,7 +631,7 @@ let arr = [1,2,3,4,5,6];
 // const removeWord = (text, wordToRemove) => text.replaceAll(wordToRemove); // arrow
 // const text = 'Bu matnda ochirib tashlanishi kerak bolgan soz.';
 // const wordToRemove = 'ochirib';
-// console.log(removeWord(text, wordToRemove)); 
+// console.log(removeWord(text, wordToRemove));
 
 // const removeWord = function (text, wordToRemove) { // express
 //     text.replaceAll(wordToRemove)};
@@ -644,5 +644,15 @@ let arr = [1,2,3,4,5,6];
 // const text = 'Bu matnda ochirib tashlanishi kerak bolgan soz.';
 // const wordToRemove = 'ochirib';
 // console.log(removeWord(text, wordToRemove));
+
+// let user= {
+//     name: 'bek',
+//     age: 45
+// };
+// let res = '';
+// for (const [key , element] of Object.entries(user)) {  // yangi usul
+//     res  +=  `${key }:${element } `;
+// }
+// console.log(res.trim());
 
 
